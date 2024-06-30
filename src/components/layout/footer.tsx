@@ -1,3 +1,5 @@
+"use client";
+
 import { MiniClock } from "../misc/mini-clock";
 import { changeTimeZone } from "~/lib/utils";
 
