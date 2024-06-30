@@ -4,7 +4,6 @@ import { Button } from "~/components/ui/button";
 import { Badge } from "~/components/ui/badge";
 import { differenceInYears } from "date-fns";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 const creations = [
   {
@@ -67,13 +66,13 @@ export default function Home() {
             working remotely at
             <Badge variant="secondary" className="mx-1 px-1">
               @
-              <Link
+              <a
                 href="https://uninbox.com/?ref=blankparticle"
                 className="peer underline decoration-primary/40 transition-colors duration-300 ease-in-out hover:decoration-foreground"
                 target="_blank"
               >
                 UnInbox
-              </Link>
+              </a>
               <ArrowUpRight
                 size={12}
                 className="w-0 transition-all duration-500 ease-in-out peer-hover:w-[12px]"
@@ -88,12 +87,12 @@ export default function Home() {
             for some reason i don&apos;t remember, i go by
             <Badge variant="secondary" className="mx-[2px] px-1">
               @
-              <Link
+              <a
                 href="/gh"
                 className="underline decoration-primary/40 transition-colors duration-300 ease-in-out hover:decoration-primary"
               >
                 blankparticle
-              </Link>
+              </a>
             </Badge>
             on internet. i am currently a Second Year student studying computer science. i am self
             taught and work mostly with web apps and backends.
@@ -103,29 +102,29 @@ export default function Home() {
           </div>
           <div>
             besides all of that, i enjoy watching{" "}
-            <Link
+            <a
               href="/anime"
               className="decoration-text/40 underline transition-colors duration-300 ease-in-out hover:text-foreground hover:decoration-primary"
             >
               anime
-            </Link>{" "}
+            </a>{" "}
             and casually listening to{" "}
-            <Link
+            <a
               href="/music"
               className="decoration-text/40 underline transition-colors duration-300 ease-in-out hover:text-foreground hover:decoration-primary"
             >
               music
-            </Link>
+            </a>
             .
           </div>
           <div>
             reach out to me on{" "}
-            <Link
+            <a
               href="/discord"
               className="decoration-text/40 underline transition-colors duration-300 ease-in-out hover:text-foreground hover:decoration-primary"
             >
               discord
-            </Link>{" "}
+            </a>{" "}
             or at{" "}
             <Tooltip>
               <TooltipTrigger>
@@ -135,9 +134,9 @@ export default function Home() {
               </TooltipTrigger>
               <TooltipContent side="right">
                 <Button asChild variant="ghost" size="icon-sm">
-                  <Link href="mailto:hello@blankparticle.in">
+                  <a href="mailto:hello@blankparticle.in">
                     <ArrowUpRight size={12} />
-                  </Link>
+                  </a>
                 </Button>
                 <CopyButton
                   text="hello@blankparticle.in"
@@ -169,14 +168,14 @@ export default function Home() {
             <div className="flex flex-col">
               {creations.map((_) => (
                 <div key={_.title} className="flex flex-col gap-1 border-b py-3 last:border-none">
-                  <Link
+                  <a
                     className="text-sm font-medium underline decoration-foreground/50 transition-colors duration-300 ease-in-out hover:decoration-foreground"
                     href={_.url}
                     target="_blank"
                   >
                     {_.title}
                     <ArrowUpRight size={12} className="inline stroke-muted-foreground" />
-                  </Link>
+                  </a>
                   <div className="text-pretty text-sm text-muted-foreground">{_.description}</div>
                 </div>
               ))}
@@ -187,14 +186,14 @@ export default function Home() {
             <div className="flex flex-col">
               {workingOn.map((_) => (
                 <div key={_.title} className="flex flex-col gap-1 border-b py-3 last:border-none">
-                  <Link
+                  <a
                     className="text-sm font-medium underline decoration-foreground/50 transition-colors duration-300 ease-in-out hover:decoration-foreground"
                     href={_.url}
                     target="_blank"
                   >
                     {_.title}
                     <ArrowUpRight size={12} className="inline stroke-muted-foreground" />
-                  </Link>
+                  </a>
                   <div className="text-pretty text-sm text-muted-foreground">{_.description}</div>
                 </div>
               ))}
@@ -205,14 +204,14 @@ export default function Home() {
             <div className="flex flex-col">
               {writings.map((_) => (
                 <div key={_.title} className="flex flex-col gap-1 border-b py-3 last:border-none">
-                  <Link
+                  <a
                     className="text-sm font-medium underline decoration-foreground/50 transition-colors duration-300 ease-in-out hover:decoration-foreground"
                     href={_.url}
                     target="_blank"
                   >
                     {_.title}
                     <ArrowUpRight size={12} className="inline stroke-muted-foreground" />
-                  </Link>
+                  </a>
                   <div className="text-pretty text-sm text-muted-foreground">{_.description}</div>
                 </div>
               ))}
