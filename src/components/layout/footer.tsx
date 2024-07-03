@@ -6,7 +6,7 @@ import { changeTimeZone } from "~/lib/utils";
 export function Footer() {
   return (
     <div className="border-t">
-      <footer className="mx-auto flex w-full max-w-3xl items-center justify-between p-2">
+      <footer className="mx-auto flex w-full max-w-screen-lg items-center justify-between p-2">
         <div className="text-xs font-semibold text-muted-foreground">
           Made with 💚 by BlankParticle
         </div>

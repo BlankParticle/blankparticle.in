@@ -55,7 +55,7 @@ const writings = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-3xl flex-1 px-2">
+    <main className="mx-auto max-w-screen-lg flex-1 px-2">
       <div className="flex flex-col gap-12 py-8">
         <div className="flex flex-col gap-1">
           <h1 className="text-3xl font-medium">Rahul Mishra</h1>

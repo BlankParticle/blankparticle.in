@@ -12,3 +12,9 @@ export function changeTimeZone(date: Date, timeZone: string) {
     })
   );
 }
+
+export function isMac() {
+  return typeof window !== "undefined"
+    ? window.navigator.userAgent.toUpperCase().includes("MAC")
+    : false;
+}
